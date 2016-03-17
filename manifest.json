@@ -1,0 +1,21 @@
+{
+  "name" :"RevRemit Login",
+  "version" :"1.0",
+  "description" :"only for RevRemit",
+  "content_scripts":[ {
+    "js": ["jquery.js", "content.js"],
+      "matches": ["https://revremit-qa.revenuemed.com/*", "https://revremit-qa.revenuemed.com/*", "https://revremit-us-uat.revenuemed.com/*"]
+    } ],
+    "permissions" : [
+      "declarativeContent",
+      "storage"
+    ],
+    "icons": {
+      "28":"RevRemit.png"
+    },
+    "browser_action": {
+      "default_icon" :"RevRemit.png",
+      "default_popup": "revremit.html"
+    },
+    "manifest_version" : 2
+}
